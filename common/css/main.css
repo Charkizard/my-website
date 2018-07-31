@@ -42,3 +42,15 @@ a:hover {
     font-family: 'Karla', 'Roboto', 'Arial', sans-serif;
     border-radius: 0px;
 }
+
+section {
+    padding: 60px 15px;
+}
+
+section:nth-child(even) {
+    background: #f1f1f1;
+}
+
+section.hero {
+    padding: 240px 15px;
+}
