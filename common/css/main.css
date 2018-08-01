@@ -54,3 +54,48 @@ section:nth-child(even) {
 section.hero {
     padding: 240px 15px;
 }
+
+footer .contact {
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .wcag-message {
+    padding: 10px 0;
+    background: #f1f1f1;
+}
+
+footer .wcag-message .message {
+    margin: 0 auto;
+    display: block;
+    max-width: 700px;
+}
+
+footer .wcag-message p {
+    font-size: 14px;
+    line-height: 32px;
+    margin: 0;
+}
+
+footer .wcag-message a {
+    margin-right: 20px;
+    float: left;
+}
+
+@media (max-width: 767px) {
+
+    footer .wcag-message {
+        text-align: center;
+    }
+
+    footer .wcag-message a {
+        float: none;
+        display: block;
+        margin: 0 0 10px 0;
+    }
+
+    footer .wcag-message p {
+        line-height: 140%;
+    }
+
+}
