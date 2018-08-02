@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #666666;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.container-sm {
+    max-width: 700px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Karla', 'Roboto', 'Arial', sans-serif;
+    color: #111;
+}
+
+h1 {
+    font-size: 3.333em;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2.222em;
+    margin-bottom: 15px;
+}
+
+p.lead {
+    font-size: 1.222em;
+    margin-bottom: 30px;
+}
+
+ul {
+    padding: 0 0 0 15px;
+    margin: 0 0 30px 0;
+    font-size: 0.777em;
+}
+
+a {
+    color:#0074D9;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#0074D9;
+}
+
+.btn {
+    font-family: 'Karla', 'Roboto', 'Arial', sans-serif;
+    border-radius: 0px;
+    padding: 10px 25px;
+    font-size: 1em;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: all 0.2 ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+section {
+    padding: 60px 15px;
+}
+
+section:nth-child(even) {
+    background: #f1f1f1;
+}
+
+section.hero {
+    padding: 240px 15px;
+}
+
+footer .contact {
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .wcag-message {
+    padding: 10px 0;
+    background: #f1f1f1;
+}
+
+footer .wcag-message .message {
+    margin: 0 auto;
+    display: block;
+    max-width: 700px;
+}
+
+footer .wcag-message p {
+    font-size: 0.777em;
+    line-height: 32px;
+    margin: 0;
+}
+
+footer .wcag-message a {
+    margin-right: 20px;
+    float: left;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 60px 15px;
+    }
+
+    section.hero {
+        padding: 120px 15px;
+    }
+
+    footer .wcag-message {
+        text-align: center;
+    }
+
+    footer .wcag-message a {
+        float: none;
+        display: block;
+        margin: 0 0 10px 0;
+    }
+
+    footer .wcag-message p {
+        line-height: 140%;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
