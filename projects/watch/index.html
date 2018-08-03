@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Become Bond. Introducing the CL-007-CK. </title>
+    <link rel="shortcut icon" href="fav.ico"/>
+    <link href="css/Watch.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="introduction">
+        <h1>Become Bond.</h1>
+        <p>Introducing the CL-007-CK&#8482;, the only watch with the guarantee of making your espionage dreams come true*. Available in a range of colours. Coming Winter 2016.</p>
+        <h2>Instuctions</h2><p id="hint">(Watch's crown in the knob on the right side of the face)</p>
+        <h3>Changing the time/stopwatch:</h3>
+        <p>Click the watch's crown and adjust acordingly.</p>
+        <h3>Setting the alarm:</h3>
+        <p>Click the watch's crown and choose an alarm time.</p>
+        <h3>Customising the watch:</h3>
+        <p>Toggle strap and face colours by clicking them.</p>
+      </div>
+      <div id="stopWatchControls">
+        <div id="start" class="btn bounceIn animated">Start</div>
+        <div id="stop" class="btn bounceIn animated">Stop</div>
+        <div id="reset" class="btn bounceIn animated">Reset</div>
+      </div>
+      <div id="timeManipulation">
+        <input type="text" placeholder="HH" id="hoursInput" class="bounceIn animated">
+        <input type="text" placeholder="MM" id="minutesInput" class="bounceIn animated">
+        <input type="text" placeholder="SS" id="secondsInput" class="bounceIn animated"> <br>
+        <input type="submit" value="Set Alarm" id="alarmSubmit" class="bounceIn animated">
+        <div id="validationMessage" class="bounceIn animated">
+        </div>
+      </div>
+      <div id="alarmOverlay">
+        <div id="alarmMessage" class="bounceIn animated">
+          <h2>Alarm!</h2>
+          <span id="closeAlarmMessage">Close</span>
+        </div>
+      </div>
+      <div id="watchContainer">
+      </div>
+      <p class="footer">*Only if you are Bond, James Bond. Multimedia Design &amp; Applications Assignment 1</p>
+    </div>
+    <script src="js/raphael-min.js"></script>
+    <script src="js/Watch.js"></script>
+    <!-- References -->
+    <!-- Getting current day in JS: http://www.w3schools.com/jsref/jsref_getday.asp -->
+    <!-- Getting current date + month in JS: http://stackoverflow.com/questions/1531093/how-to-get-current-date-in-javascript -->
+    <!-- Helped formulate media queries in JS http://www.sitepoint.com/javascript-media-queries/ -->
+  </body>
+</html>

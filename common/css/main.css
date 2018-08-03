@@ -56,6 +56,10 @@ a:hover {
     transition: all 0.2 ease-in-out;
 }
 
+.disabled {
+    cursor: not-allowed;
+}
+
 .btn:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MDA | Assignment 2</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Snake Quest</h1>
+    <h2>A JavaScript game created for Assignment 2 of the 'Multimedia Design and Applications' Module at The University of Sussex</h2>
+    <h3>105976 &copy; 2016</h2>
+		<div id="game-container"></div>
+    
+    <div class="btn-container">
+      <!-- Video trigger -->
+      <button type="button" id="video-toggle" class="btn btn-default" data-toggle="modal" data-target="#Video">Video</button>
+      <!-- References trigger -->
+      <button type="button" id="ref-toggle" class="btn btn-default" data-toggle="modal" data-target="#references">References</button>
+    </div> 
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="Video" tabindex="-1" role="dialog" aria-labelledby="VideoLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="VideoLabel">Congratulations!</h4>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">You've earnt yourself a fist bump!</p>
+            <video width="640" height="360" controls>
+              <source src="assets/video/fistbump.mp4" type="video/mp4">
+              <source src="assets/video/fistbump.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !Video Modal -->
+
+    <!-- References Modal -->
+    <div class="modal fade" id="references" tabindex="-1" role="dialog" aria-labelledby="referencesLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="referencesLabel">References</h4>
+          </div>
+          <div class="modal-body">
+            <p>Throughout the assignment the author has used a range or libraries and frameworks during development. These are listed below.</p>
+            <div class="list-group">
+              <h3>Libraries &amp; Frameworks</h3>
+              <a href="http://jquery.com/" target="_blank" class="list-group-item">
+                <h4 class="list-group-item-heading">jQuery</h4>
+                <p class="list-group-item-text">jQuery was used for various javascript functions.</p>
+              </a>
+              <a href="phaser.io/" target="_blank" class="list-group-item">
+                <h4 class="list-group-item-heading">Phaser</h4>
+                <p class="list-group-item-text">Phaser was used as the game's engine.</p>
+              </a>
+              <a href="http://getbootstrap.com/" target="_blank" class="list-group-item">
+                <h4 class="list-group-item-heading">Bootstrap</h4>
+                <p class="list-group-item-text">Bootstrap was used to create the site container and modals.</p>
+              </a>
+              
+              <h3>Software</h3>
+              <a href="https://www.sublimetext.com/3" target="_blank" class="list-group-item">
+                <h4 class="list-group-item-heading">Sublime text 3</h4>
+                <p class="list-group-item-text">Sublime was used as the text editor throughout the project.</p>
+              </a>
+              <a href="http://www.pixelmator.com/mac/" target="_blank" class="list-group-item">
+                <h4 class="list-group-item-heading">Pixelmator</h4>
+                <p class="list-group-item-text">Pixelmator was used to create the game's assets.</p>
+              </a>
+              <a href="http://thirdcog.eu/apps/cfxr" target="_blank" class="list-group-item">
+                <h4 class="list-group-item-heading">CFXR</h4>
+                <p class="list-group-item-text">Used to create the game's sound.</p>
+              </a>
+              <a href="http://realfavicongenerator.net/" target="_blank" class="list-group-item">
+                <h4 class="list-group-item-heading">Real Favicon Generator</h4>
+                <p class="list-group-item-text">This was used to create the game's favicon and 'add to homescreen' app icons.</p>
+              </a>
+
+              <h3>Graphics &amp; Images</h3>
+              <a href="http://img07.deviantart.net/7d96/i/2014/027/6/1/chibi_snake_pattern_by_sneeuwmaan-d73y41h.png" target="_blank" class="list-group-item">
+                <h4 class="list-group-item-heading">Snake Chibi Pattern</h4>
+                <p class="list-group-item-text">This design was used as a basis for the snake design in Level 3.</p>
+              </a>
+              <a href="http://admanic.co.uk/" target="_blank" class="list-group-item">
+                <h4 class="list-group-item-heading">Adam Pearce Illustration</h4>
+                <p class="list-group-item-text">Adam illustrated the cutscenes for the game, whilst the author was present. The author provided staging and posiitoning of the characters and elements.</p>
+              </a>
+
+              <h3>Video</h3>
+              <a href="https://www.youtube.com/watch?v=zVLA8fvBczg" target="_blank" class="list-group-item">
+                <h4 class="list-group-item-heading">Big Hero 6 Clip: The Classic Baymax Fist Bump</h4>
+                <p class="list-group-item-text">This was used as the video for the assignment. It displays when a player completes the game.</p>
+              </a>
+
+              <h3>Audio</h3>
+              <a href="http://ericskiff.com/music/" target="_blank" class="list-group-item">
+                <h4 class="list-group-item-heading">Eric Skiff Music</h4>
+                <p class="list-group-item-text">Eric's music was used as the soundtrack for the game, all his songs are relased under the Creative Commons Attribution License.</p>
+              </a>
+
+              <h3>Code Snippets</h3>
+              <a href="http://tutorialzine.com/2015/06/making-your-first-html5-game-with-phaser/" target="_blank" class="list-group-item">
+                <h4 class="list-group-item-heading">Making Your First HTML5 Game With Phaser</h4>
+                <p class="list-group-item-text">The implementation of the snake level was based on this tutorial. The functions outlined were used basis for the players's movement logic. Further functionality was added than in this tutorial, and the code is structured differently. No assets were used from this tutorial; all assets were created by the author.</p>
+              </a>
+              <a href="http://phaser.io/tutorials/making-your-first-phaser-game" target="_blank" class="list-group-item">
+                <h4 class="list-group-item-heading">Making your first Phaser game</h4>
+                <p class="list-group-item-text">This tutorial was used as a basis for the platform levels, it's structure was refactored, and a multitude of new features were added. No original assets are used.</p>
+              </a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !References Modal -->
+
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/phaser.min.js"></script>
+  <script src="js/game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: url('https://qzprod.files.wordpress.com/2015/10/daniel-craig-james-bond.jpg?quality=80&strip=all&w=1600') no-repeat center center fixed; 
+	background: url('../resources/007-colour.jpg') no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	font-family: 'Open Sans Regular', 'Arial', sans-serif;
+	color: #ffffff;
+	overflow: hidden;
+}
+
+svg {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* IE/Edge */
+	user-select: none;
+	cursor: default;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+}
+
+.introduction {
+	max-width: 650px;
+	margin-top: -30px;
+}
+
+.introduction h1 {
+	text-transform: uppercase;
+	font-size: 52px;
+	margin: 0 0 15px 0;
+}
+
+.introduction h2 {
+	margin: 0 0 15px 0;
+	float: left;
+}
+
+.introduction h3 {
+	margin: 0 0 15px 0;
+	clear: left;
+	float: left;
+	min-width: 270px;
+}
+
+.introduction p {
+	margin: 2px 0 10px 0;
+	float: left;
+	clear: right;
+	display:inline-block;
+}
+
+.introduction p#hint {
+	margin-top: 12px;
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0px;
+	right: 10px;
+	font-size: 12px;
+	color: #fff;
+}
+
+#watchContainer {
+	text-align: center;
+	float: left;
+	padding-top: 25px;
+	margin-left: -25px;
+	clear: both;
+}
+
+.button:hover {
+	cursor: pointer;
+	fill: #1F303F;
+}
+
+.button-text {
+	pointer-events: none;
+}
+
+#timeManipulation {
+	position: absolute;
+	height: 0;
+	z-index: 9;
+	top: 590px;
+	left: 474px;
+	display: none;
+}
+
+#timeManipulation input {
+	padding: 10px;
+	margin-right: 10px;
+	width: 35px;
+	text-align: center;
+	height: auto;
+	border: none;
+	border-radius: 2px;
+	font-size: 16px;
+}
+
+#timeManipulation input#alarmSubmit {
+	width: auto;
+	margin-top: 10px;
+	color: #666;
+}
+
+#timeManipulation input#alarmSubmit:hover {
+	background: #666;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+#timeManipulation #validationMessage {
+	font-size: 12px;
+	color: #666;
+}
+
+#validationMessage {
+	background: rgba(0,0,0,0.6);
+	border-radius: 2px;
+	padding: 10px 5px;
+	margin-top: 5px;
+	display: none;
+}
+
+#validationMessage p,
+#validationMessage ul li {
+	margin: 0;
+	line-height: 16px;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+#alarmOverlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	z-index: 9;
+	display: none;
+}
+
+#alarmOverlay #alarmMessage {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background: #E4E4E6;
+	border-radius: 2px;
+	color: #000;
+	height: 100px;
+	width: 150px;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+#alarmOverlay #alarmMessage h2 {
+	font-size: 20px;
+}
+
+#closeAlarmMessage {
+	color: #0770E5;
+	width: 100%;
+	padding: 10px 0;
+	border-top: 1px solid #E4E4E3;
+	display: inline-block;
+}
+
+#closeAlarmMessage:hover {
+	cursor: pointer;
+	background: #d0d0d0;
+	border-radius: 2px;
+}
+
+#stopWatchControls {
+    position: relative;
+    top: 135px;
+    left: -33px;
+    display: none;
+    z-index: 1;
+}
+
+#stopWatchControls .btn {
+	padding: 9px;
+	width: 45px;
+	text-align: center;
+	height: auto;
+	border: none;
+	border-radius: 2px;
+	font-size: 16px;
+	color: #666;
+	float: left;
+	margin-right: 10px;
+	background: #C0C0C0;
+	border: none;
+}
+
+#stopWatchControls .btn:hover {
+	background: #666;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+
